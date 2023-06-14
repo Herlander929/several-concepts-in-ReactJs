@@ -1,6 +1,9 @@
 import './App.css'
 import React from 'react'
 
+import Mega from './components/mega/Mega'
+import Contador from './components/contador/Contador'
+import Input from './components/formularios/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import DiretaPai from "./components/comunicacao/DiretaPai"
 import UsuarioInfo from './components/condicional/UsuarioInfo'
@@ -23,7 +26,22 @@ export default () => (
         <h1>Fundamentos React 2</h1>
 
         <div className="Cards">
-        <Card titulo="#10 Comunicação Indireta" color="#8BAD39">
+        <Card titulo="#13 Mega cena" color="#B9006E">
+                <Mega qtde={8}></Mega>
+                
+
+            </Card>
+            <Card titulo="#12 Contador" color="#424242">
+                <Contador numeroInicial={20}></Contador>
+                
+
+            </Card>
+            <Card titulo="#11 Componente Controlado" color="#E45F56">
+                <Input></Input>
+                
+
+            </Card>
+            <Card titulo="#10 Comunicação Indireta" color="#8BAD39">
                 <IndiretaPai></IndiretaPai>
                 
 
